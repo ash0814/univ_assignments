@@ -2,13 +2,13 @@
 
 Rectangle::Rectangle()
 {
-	weight = 1;
+	width = 1;
 	height = 1;
 }
 
 Rectangle::Rectangle(double w, double h)
 {
-	weight = w;
+	width = w;
 	height = h;
 }
 
@@ -16,14 +16,14 @@ Rectangle::~Rectangle()
 {
 }
 
-double Rectangle::getWeight()
+double Rectangle::getWidth()
 {
-	return weight;
+	return width;
 }
 
-void Rectangle::setWeight(double w)
+void Rectangle::setWidth(double w)
 {
-	weight = w;
+	width = w;
 }
 
 double Rectangle::getHeight()
@@ -38,10 +38,10 @@ void Rectangle::setHeight(double h)
 
 double Rectangle::getArea()
 {
-	return (weight * height);
+	return (width * height);
 }
 
 double Rectangle::getPerimeter()
 {
-	return (2 * (weight + height));
+	return (2 * (width + height));
 }

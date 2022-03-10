@@ -4,14 +4,14 @@
 class Rectangle
 {
 private:
-	double weight;
+	double width;
 	double height;
 public:
 	Rectangle();
 	Rectangle(double w, double h);
 	~Rectangle();
-	double getWeight();
-	void setWeight(double w);
+	double getWidth();
+	void setWidth(double w);
 	double getHeight();
 	void setHeight(double h);
 	double getArea();
