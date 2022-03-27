@@ -14,21 +14,23 @@ int main(int argc, char **argv)
 
 	if (argc < 2)
 		print_opt_list();
-	op = getopt(argc, argv, "phn:");
-	switch(op)
-	{
-		case 'p':
-			printf("Welcome Linux Programming!\n");
-			break;
-		case 'h':
-			print_opt_list();
-			break;
-		case 'n':
-			printf("Nice to meet %s\n", argv[2]);
-			break;
-		case '?':
-			printf("Wrong Option\n");
-			break;
+	else {
+		op = getopt(argc, argv, "phn:");
+		switch(op)
+		{
+			case 'p':
+				printf("Welcome Linux Programming!\n");
+				break;
+			case 'h':
+				print_opt_list();
+				break;
+			case 'n':
+				printf("Nice to meet %s\n", argv[2]);
+				break;
+			default:
+				printf("Wrong Option\n");
+				break;
+		}
 	}
 	return (0);
 }
