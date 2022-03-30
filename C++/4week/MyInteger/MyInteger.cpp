@@ -9,22 +9,22 @@ MyInteger::~MyInteger()
 {
 }
 
-const int MyInteger::getValue()
+int MyInteger::getValue() const
 {
 	return value;
 }
 
-const bool MyInteger::isEven()
+bool MyInteger::isEven() const
 {
 	return !(value % 2);
 }
 
-const bool MyInteger::isOdd()
+bool MyInteger::isOdd() const
 {
 	return value % 2;
 }
 
-const bool MyInteger::isPrime()
+bool MyInteger::isPrime() const
 {
 	for (int i = 2; i < value; i++) {
 		if (value % i == 0)
@@ -33,47 +33,47 @@ const bool MyInteger::isPrime()
 	return true;
 }
 
-static bool MyInteger::isEven(int)
+bool MyInteger::isEven(int a)
 {
 
 }
 
-static bool MyInteger::isOdd(int)
+bool MyInteger::isOdd(int a)
 {
 
 }
 
-static bool MyInteger::isPrime(int)
+bool MyInteger::isPrime(int a)
 {
 
 }
 
-static bool MyInteger::isEven(const MyInteger &)
+bool MyInteger::isEven(const MyInteger &i)
 {
 
 }
 
-static bool MyInteger::isOdd(const MyInteger &)
+bool MyInteger::isOdd(const MyInteger &i)
 {
 
 }
 
-static bool MyInteger::isPrime(const MyInteger &)
+bool MyInteger::isPrime(const MyInteger &i)
 {
 
 }
 
-const bool MyInteger::equals(int a)
+bool MyInteger::equals(int a) const
 {
 	return (value == a);
 }
 
-const bool MyInteger::equals(const MyInteger &a)
+bool MyInteger::equals(const MyInteger &a) const
 {
 	return (value == a.value);
 }
 
-static int MyInteger::parseInt(const string&)
+int MyInteger::parseInt(const string& str)
 {
 
 }
