@@ -11,11 +11,12 @@ void print_opt_list()
 int main(int argc, char **argv)
 {
 	int op;
+	extern char *optarg;
 
 	if (argc < 2)
 		print_opt_list();
 	else {
-		op = getopt(argc, argv, "phn:");
+		while ((op = getopt(argc, argv, "phn:")) != -1){
 		switch(op)
 		{
 			case 'p':
@@ -25,11 +26,12 @@ int main(int argc, char **argv)
 				print_opt_list();
 				break;
 			case 'n':
-				printf("Nice to meet %s\n", argv[2]);
+				printf("Nice to meet %s\n", optarg);
 				break;
 			default:
 				printf("Wrong Option\n");
 				break;
+		}
 		}
 	}
 	return (0);
