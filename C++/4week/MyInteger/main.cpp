@@ -9,6 +9,7 @@ int main()
 	cout << "Is Even? : " << intClass.isEven() << endl;
 	cout << "Is Odd? : " << intClass.isOdd() << endl;
 	cout << "Is Prime? : " << intClass.isPrime() << endl;
+	cout << "Is Prime? : " << MyInteger::isPrime(intClass) << endl;
 	cout << "Is same as 123? : " << intClass.equals(123) << endl;
 	cout << "Is same as classTen? : " << intClass.equals(classTen) << endl;
 	cout << endl;
