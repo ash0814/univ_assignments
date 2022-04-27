@@ -10,7 +10,7 @@ class Course
 public:
 	Course(const string &courseName, int capacity);
 	~Course();
-	Course(const Course &);
+	// Course(const Course &);
 	string getCourseName() const;
 	void addStudent(const string &name);
 	void dropStudent(const string &name);

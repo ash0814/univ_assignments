@@ -15,15 +15,15 @@ Course::~Course()
 	delete[] students;
 }
 
-Course::Course(const Course &course)
-{
-	courseName = course.courseName;
-	numberOfStudents = course.numberOfStudents;
-	capacity = course.capacity;
-	students = new string[capacity];
-	for (int i = 0; i <numberOfStudents; i++)
-		students[i] = course.students[i];
-}
+// Course::Course(const Course &course)
+// {
+// 	courseName = course.courseName;
+// 	numberOfStudents = course.numberOfStudents;
+// 	capacity = course.capacity;
+// 	students = new string[capacity];
+// 	for (int i = 0; i <numberOfStudents; i++)
+// 		students[i] = course.students[i];
+// }
 
 string Course::getCourseName() const
 {

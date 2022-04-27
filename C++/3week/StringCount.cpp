@@ -24,5 +24,8 @@ int main()
 		if (cnts[i] > 0)
 			cout << (char)(i + 97) << ": " << cnts[i] << " times" << endl;
 	}
+
+	// char &temp = char;
+	
 	return (0);
 }
