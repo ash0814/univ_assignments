@@ -15,8 +15,6 @@ public:
   bool isFilled() const;
   void setFilled(bool filled);
   string toString() const;
-  virtual double getArea() const = 0;
-  virtual double getPerimeter() const = 0;
 
 private:
   string color;
